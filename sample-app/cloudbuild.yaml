@@ -3,7 +3,7 @@ steps:
   - id: 'build'
     name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/gceme:$TAG_NAME', './sample-app/']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/gceme:$TAG_NAME', 'sample-app/cloudbuild.yaml']
       
 ### Test
 ### Publish
